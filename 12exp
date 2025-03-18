@@ -1,0 +1,25 @@
+/*passing objecct as parameter*/
+//program to demonstrate working of passing object as parameter to function//
+#include<iostream>
+using namespace std;
+class Program{
+    public: int x;
+    Program (int y)     //parametrized constructor of class program
+    {
+        x = y;
+    }
+    void Display(){
+        cout<< "\n value of x is"<<x;
+    }
+};
+void modify(Program obj2){ 
+    obj2.x= 20;
+    cout<<"\n Modified Value of x by object 2 is "<<obj2.x;
+}
+int main(){
+    Program obj1(5);
+    obj1.Display();
+    modify(obj1);//calling modify function with class object
+    obj1.Display();   
+    return 0;
+}           
