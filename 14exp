@@ -1,0 +1,23 @@
+/*program to create a class and a function to accept username and password as parameter 
+parameter.
+eg Function with no return type and with parameter*/
+#include<iostream>
+using namespace std;
+class program
+{
+public : void accept(string Username, string Password)    
+{
+    cout<<"Username ="<<Username;
+    cout<<"\n Password ="<<Password;
+}
+};
+int main()
+{
+    program obj;
+    string Username1,Password1;
+    cout<<"\n Enter Username and password";
+    cin>>Username1>>Password1;
+    obj.accept(Username1,Password1);
+    
+    return 0;
+}
