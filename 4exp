@@ -1,0 +1,17 @@
+/*write a program for employee mamnagement system
+a. create a class with name employee
+b. create a parametrizrd constructor to initialize class attributes like,
+Employee name , Employee code , basic salary.
+c. create a member function Display() to display records on screen.
+d. create a function Gross_salary() which calculate components of salary like
+TA(3% of basic salary),DA(4% of basic salary),HRA(5% of basic salary).
+PF(4% of basic salary).
+Gross salary is sum of basic,TA,DA,HRA.PF is deducted from gross salary.
+e. create a fuction update()to increment basic salary of employee as:-
+Gross salary between 10000 to 20000, 10% increment
+Gross salary between 20000 to 30000, 15% increment
+Gross salary above 30000,20% increment
+f. create a function update_profile(), if user wants to correct its name or code.
+g. create a function with name Ger_Data()that only reads employee data but 
+not able to modify user data
+*/ 
