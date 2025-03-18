@@ -1,0 +1,43 @@
+//program to create a class with name Payapp, with function as:
+//Accept() function will accept amount from user
+//Validate() function will check amount is valid(>0)
+//Discount() function will calculate discount:10% on amount
+//Display() function will display payable bill on screen
+
+#include<iostream>
+using namespace std;
+class Payapp
+{
+    private:float amount,dis;
+    public:void Accept()
+    {
+        cout<<"enter amount";
+        cin>>amount;
+    }
+    public:void Validate(){
+        if(amount>0)
+        {
+            cout<<"\n amount is valid";
+            Discount();
+            Display();
+        }
+    };
+    public:void Discount()
+    {
+        dis=amount/100*10;
+        cout<<"\n Discount is "<<dis;
+    }
+    public:void Display()
+    {
+        cout<<"\n payable bill is "<<amount-dis;
+    }
+};
+
+
+int main()
+{
+    Payapp obj;
+    obj.Accept();
+    obj.Validate();
+    return 0;
+}
