@@ -1,0 +1,28 @@
+/*syntax of array of object 
+class name objectname dimention[]
+example :- basio array of object*/
+#include<iostream>
+using namespace std;
+class books_management_system{
+    private:int bookid;
+    string bookname;
+    public:void accept(){
+        cout<<"\n enter bookid";
+        cin>>bookid;
+        cout<<"\n enter bookname";
+        cin>>bookname;
+    }
+    public: void display(){
+        cout<<"bookid is"<<bookid<<"\t bookname is"<<bookname<<endl;
+    }
+};
+int main(){
+ books_management_system obj[5];
+int i;
+for(i=0;i<5;i++){
+    obj[i].accept();
+    
+for(i=0;i<5;i++){
+    obj[i].display();           
+}
+}
