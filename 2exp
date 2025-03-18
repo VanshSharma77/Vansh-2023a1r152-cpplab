@@ -1,0 +1,28 @@
+// To  create a student class, its constructor , destructor and member functions.
+#include<iostream>
+using namespace std;
+class student{
+    public: string StudentName; int StudentId;
+    float Marks,per;
+    public: Student(string Name , int Id,float Mark ){
+        StudentName = Name;
+        StudentId = Id;
+        Marks = Mark;
+    }
+    void Display(){
+        cout<<"/nName = "<<StudentName<<"\t Marks are ";
+        cout<<Marks;
+    }
+    char Grade(){
+        ;per=Marks/500*100;
+        if(per>=80 && per <=100){
+            cout<<"/n Your Grade is A";
+            return 'A';
+        }
+        else if(per>=70 && per <80){
+            cout<<"/n Your Grade is B";
+            return 'B';67
+        }
+    }
+
+}
