@@ -1,0 +1,30 @@
+//to update the details of a student using a member sunction of a student class//
+//to delete the details of a student using a member function of a student class//
+#include<iostream>
+using namespace std;
+class Student{
+    public:int studentId ; float Marks;
+    Student(int StudentId1, float Marks1){
+     studentId=StudentId1;
+     Marks=Marks1;
+    }
+    void Display(){
+        cout<<"\nStudent Id is:"<<studentId;
+        cout<<"\nMarks are"<<Marks;
+    }
+};
+void update(Student &obj1){
+    cout<<"\n Enter information you want to update :";
+    cout<<"\n Enter new student Id :";
+    cin>>obj1.studentId;
+    cout<<"\n Enter your updated marks:";
+    cin>>obj1.Marks;
+}
+int main(){
+    Student obj1(101,450);
+    obj1.Display();
+    update(obj1);
+    obj1.Display();
+    return 0;
+}
+
