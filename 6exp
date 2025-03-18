@@ -1,0 +1,18 @@
+/* program to demostrate  the working of constructer with parameter in 
+cpp*/
+#include<iostream>
+using namespace std;
+class A// Class with name A
+{
+    public : A(int x) //paraetrized constructer
+    {
+        cout<<"Value of x is"<<x;
+    }
+};
+int main(){
+    int a;
+    cout<<"Enter a number";
+    cin>>a;
+    A obj(a);    //Class object obj                 
+    return 0;
+}
