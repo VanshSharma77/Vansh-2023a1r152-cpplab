@@ -1,0 +1,27 @@
+/*program to demostrate working of constructor and destructor in program*/
+#include<iostream>
+using namespace std;
+class A{
+    private : int x;
+public : A()
+    {
+        x=10;
+        cout<<"consructor Invoked x= "<<x;
+    }
+public :void f1(){
+        cout<<"\n Fuction 1";
+    }
+public :void f2(){
+        cout<<"\n Fuction 2";
+    }
+public :~A(){
+    cout<<"\n Destructor Invoked x="<<x;
+}
+};
+int main(){
+    A obj;
+    obj.f2();
+    obj.f1();
+    return 0;
+
+}
